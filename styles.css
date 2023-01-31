@@ -1,0 +1,155 @@
+body {
+  background-color: rgba(203, 212, 185, 0.507);
+}
+
+h1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height:20%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgb(71, 69, 69);
+  border-radius: 10px;
+  padding:20px 30px;
+  display: none;
+  font-family:  sans-serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+  min-height: 270px;
+  min-width: 400px;
+  max-width: 500px;
+  background-color: rgba(203, 209, 187, 1)
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  min-height: 200px;
+  gap:7px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap:14px;
+}
+
+.card {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  margin-bottom: 22px;
+  padding:20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  min-width: 500px;
+  max-width: 900px;
+  align-items: center;
+  background-color: rgba(196, 206, 176, 0.507);
+}
+
+.shelf {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card > div {
+  padding: 8px;
+  font-family:  sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  font-size: 18px;
+}
+
+.main > div {
+  padding-top: 5px;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.close {
+  border:0;
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.openPopup {
+  font-size: 18px;
+  padding:10px 24px;
+  margin: 0 auto;
+  font-family:'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+  border-radius: 8px;
+}
+
+.book-status-container {
+  padding-bottom: 10px;
+}
+
+#book-status-form {
+  height:22px;
+  border-radius: 4px;
+}
+
+.page-container {
+  padding-bottom: 8px;
+}
+
+#pages {
+  width:80px;
+}
+
+#title {
+  margin-bottom: 6px;
+}
+
+#submit {
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family:'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+}
+
+.delete {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  width: 8vh;
+  min-width: 140px;
+  height: 2vh;
+  min-height: 30px;
+  border-radius: 6px;
+  border: 1px groove;
+  background-color: rgba(155, 167, 130, 0.507);
+}
+
+.read-book {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  width: 8vh;
+  min-width: 140px;
+  height: 2vh;
+  min-height: 30px;
+  border: 1px groove;
+  border-radius: 6px;
+  background-color: rgba(155, 167, 130, 0.507);
+}
